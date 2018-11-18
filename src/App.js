@@ -7,7 +7,18 @@
  */
 
 import React, {Component} from 'react';
+import {createStore} from 'redux';
+import reducer from './reducers';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+
+const store = createStore(reducer);
+console.log("store", store.getState());
+
+import {fetchCats} from "./actions/cats"
+
+store.dispatch(fetchCats);
+console.log("store", store.getState());
+
 
 const instructions = Platform.select({
 	ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',

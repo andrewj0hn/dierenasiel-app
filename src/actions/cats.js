@@ -1,10 +1,22 @@
-export const FETCH_CATS = 'FETCH_CATS';
-export const RECEIVE_CATS = 'RECEIVE_CATS';
+import * as types from "../constants/ActionTypes";
 
-export const fetchCats = {
-	type: FETCH_CATS,
-};
+const startFetchAllCats = {
+	type: types.START_FETCH_ALL_CATS,
+}
 
-export const receiveCats = {
-	type: RECEIVE_CATS,
-};
+const receiveAllCats = data => ({
+	type: types.RECEIVE_ALL_CATS,
+	data,
+})
+
+export function fetchAllCats() {
+	return (dispatch, getState) => {
+		dispatch(startFetchAllCats);
+
+		console.log("get all cats");
+		const cats = [];
+
+		return dispatch(receiveAllCats(cats));
+	}
+}
+

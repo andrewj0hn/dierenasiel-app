@@ -7,16 +7,15 @@
  */
 
 import React, {Component} from 'react';
-import {createStore} from 'redux';
-import reducer from './reducers';
+import {applyMiddleware, createStore, compose} from 'redux';
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+import reducers from './reducers';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
-const store = createStore(reducer);
-console.log("store", store.getState());
+const middlewares = compose(applyMiddleware(thunk, logger));
+const store = createStore(reducers, undefined, middlewares);
 
-import {fetchCats} from "./actions/cats"
-
-store.dispatch(fetchCats);
 console.log("store", store.getState());
 
 

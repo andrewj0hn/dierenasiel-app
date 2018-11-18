@@ -1,16 +1,16 @@
 import {
-	FETCH_CATS,
-	RECEIVE_CATS,
-} from "../actions/cats"
+	START_FETCH_ALL_CATS,
+	RECEIVE_ALL_CATS,
+} from "../constants/ActionTypes"
 
 export default function cats(state = {
 	cats: [],
 	fetching: false,
 }, action) {
 	switch (action.type) {
-		case FETCH_CATS:
+		case START_FETCH_ALL_CATS:
 			return Object.assign(state, {fetching: true});
-		case RECEIVE_CATS:
+		case RECEIVE_ALL_CATS:
 			return Object.assign(state, {fetching: false});
 		default:
 			return state;

@@ -4,11 +4,9 @@ import MenuButton from "../MenuButton";
 import HeaderTitle from "../HeaderTitle";
 import styles from "./styles";
 
-export default () => {
-	return (
-		<View style={styles.container}>
-			<MenuButton/>
-			<HeaderTitle/>
-		</View>
-	);
-}
+export default () => (
+	<View style={styles.container}>
+		<MenuButton/>
+		<HeaderTitle/>
+	</View>
+)

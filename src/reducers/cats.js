@@ -1,7 +1,7 @@
 import {
 	START_FETCH_ALL_CATS,
 	RECEIVE_ALL_CATS,
-} from "../constants/ActionTypes"
+} from "../constants/ActionTypes";
 
 export default function cats(state = {
 	cats: [],

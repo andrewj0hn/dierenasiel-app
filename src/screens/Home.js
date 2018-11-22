@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 
 class Home extends Component {
 	componentDidMount() {
-		console.log("componentDidMount: Home", this.props);
+		console.log("componentDidMount: Home, this.props", this.props);
 	}
 
 	render() {

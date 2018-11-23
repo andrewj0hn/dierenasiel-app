@@ -11,6 +11,6 @@ export default styles = StyleSheet.create({
 	line: {
 		height: 5,
 		borderRadius: 2,
-		backgroundColor: "grey",
+		backgroundColor: "red",
 	}
 });

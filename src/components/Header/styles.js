@@ -9,6 +9,6 @@ export default styles = StyleSheet.create({
 		justifyContent: "flex-end",
 		paddingHorizontal: 20,
 		borderBottomWidth: 1,
-		borderBottomColor: "grey",
+		borderBottomColor: "purple",
 	},
 });

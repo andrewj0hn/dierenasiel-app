@@ -1,7 +1,7 @@
 import React from "react";
 import {StatusBar as StatusBarRN, View} from "react-native";
-import styles from "./styles";
 import PropTypes from 'prop-types';
+import styles from "./styles";
 
 const StatusBar = ({height}) => (
 	<View>

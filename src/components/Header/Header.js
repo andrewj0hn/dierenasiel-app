@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import styles from "./styles";
 
 const Header = ({onMenuButtonClick}) => {
+	console.log("onMenuButtonClick");
 	return (
 		<View style={styles.container}>
 			<MenuButton onPress={onMenuButtonClick}/>

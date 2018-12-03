@@ -6,7 +6,7 @@ export default function menu(state = {
 	switch (action.type) {
 		case TOGGLE_SIDEBAR:
 			const {sidebarIsOpen} = state;
-			return Object.assign(state, {sidebarIsOpen: !sidebarIsOpen});
+			return Object.assign({}, state, {sidebarIsOpen: !sidebarIsOpen});
 		default:
 			return state;
 	}

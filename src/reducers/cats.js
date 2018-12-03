@@ -9,9 +9,9 @@ export default function cats(state = {
 }, action) {
 	switch (action.type) {
 		case START_FETCH_ALL_CATS:
-			return Object.assign(state, {fetching: true});
+			return Object.assign({}, state, {fetching: true});
 		case RECEIVE_ALL_CATS:
-			return Object.assign(state, {fetching: false});
+			return Object.assign({}, state, {fetching: false});
 		default:
 			return state;
 	}

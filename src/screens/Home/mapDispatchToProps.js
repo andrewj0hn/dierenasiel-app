@@ -5,7 +5,7 @@ export default dispatch => {
 	return {
 		onMenuButtonClick: () => {
 			console.log("onMenuButtonClick");
-			dispatch(toggleSidebar);
+			return dispatch(toggleSidebar());
 		}
 	}
 }

@@ -4,10 +4,9 @@ import {applyMiddleware, compose, createStore} from "redux";
 import {Provider} from "react-redux";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
-import StatusBar from "../components/StatusBar/StatusBar";
-import reducers from "../reducers";
-import Home from "../screens/Home";
-import styles from "./styles";
+import StatusBar from "./components/StatusBar/StatusBar";
+import reducers from "./reducers";
+import Home from "./screens/Home";
 
 const middlewares = compose(applyMiddleware(thunk, logger));
 const store = createStore(reducers, undefined, middlewares);
@@ -30,7 +29,7 @@ class App extends Component {
 		const {statusBarHeight} = this.state;
 		return (
 			<Provider store={store}>
-				<View style={styles.container}>
+				<View style={{flex: 1}}>
 					<StatusBar height={statusBarHeight}/>
 					<Home/>
 				</View>

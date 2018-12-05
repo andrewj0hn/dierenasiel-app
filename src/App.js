@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import logger from "redux-logger";
 import StatusBar from "./components/StatusBar/StatusBar";
 import reducers from "./reducers";
-import Home from "./screens/Home";
+import Home from "./containers/Home";
 
 const middlewares = compose(applyMiddleware(thunk, logger));
 const store = createStore(reducers, undefined, middlewares);

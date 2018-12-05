@@ -1,3 +1,4 @@
-import HeaderTitle from "./HeaderTitle";
+// @flow
+import HeaderTitle from './HeaderTitle';
 
 export default HeaderTitle;

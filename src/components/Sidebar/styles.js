@@ -1,12 +1,13 @@
-import {StyleSheet} from "react-native";
-import {HEADERHEIGHT} from "../../constants/Styles";
+// @flow
+import { StyleSheet } from 'react-native';
+import { HEADER_HEIGHT } from '../../constants/Styles';
 
-export default styles = StyleSheet.create({
-	container: {
-		position: "absolute",
-		top: HEADERHEIGHT,
-		right: 0,
-		bottom: 0,
-		backgroundColor: "blue",
-	},
+export default StyleSheet.create({
+  container: {
+    position: 'absolute',
+    top: HEADER_HEIGHT,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'blue',
+  },
 });

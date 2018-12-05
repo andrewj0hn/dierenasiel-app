@@ -1,3 +1,4 @@
-import StatusBar from "./StatusBar";
+// @flow
+import StatusBar from './StatusBar';
 
 export default StatusBar;

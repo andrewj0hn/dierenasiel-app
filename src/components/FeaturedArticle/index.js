@@ -1,3 +1,4 @@
-import FeaturedArticle from "./FeaturedArticle";
+// @flow
+import FeaturedArticle from './FeaturedArticle';
 
 export default FeaturedArticle;

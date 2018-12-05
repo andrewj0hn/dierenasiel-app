@@ -1,3 +1,4 @@
-import Header from "./Header";
+// @flow
+import Header from './Header';
 
 export default Header;

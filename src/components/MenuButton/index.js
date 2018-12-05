@@ -1,3 +1,4 @@
-import MenuButton from "./MenuButton";
+// @flow
+import MenuButton from './MenuButton';
 
 export default MenuButton;

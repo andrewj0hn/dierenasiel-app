@@ -1,22 +1,22 @@
-import * as types from "../constants/ActionTypes"
+// @flow
+import * as types from '../constants/ActionTypes';
 
 export const startFetchAllDogs = {
-	type: types.START_FETCH_ALL_DOGS,
-}
+  type: types.START_FETCH_ALL_DOGS,
+};
 
 export const receiveAllDogs = data => ({
-	type: types.RECEIVE_ALL_DOGS,
-	data,
-})
+  type: types.RECEIVE_ALL_DOGS,
+  data,
+});
 
 export function fetchAllDogs() {
-	return (dispatch, getState) => {
-		dispatch(startFetchAllDogs);
+  return (dispatch, getState) => {
+    dispatch(startFetchAllDogs);
 
-		console.log("get all dogs");
-		const dogs = [];
+    console.log('get all dogs');
+    const dogs = [];
 
-		return dispatch(receiveAllDogs(dogs));
-	}
+    return dispatch(receiveAllDogs(dogs));
+  };
 }
-

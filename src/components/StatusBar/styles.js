@@ -1,7 +1,8 @@
-import {StyleSheet} from "react-native";
+// @flow
+import { StyleSheet } from 'react-native';
 
-export default styles = StyleSheet.create({
-	statusBarHeight: {
-		backgroundColor: "green",
-	},
+export default StyleSheet.create({
+  statusBarHeight: {
+    backgroundColor: 'green',
+  },
 });

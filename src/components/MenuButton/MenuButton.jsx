@@ -23,4 +23,8 @@ MenuButton.propTypes = {
   onPress: PropTypes.func,
 };
 
+MenuButton.defaultProps = {
+  onPress: () => {},
+};
+
 export default MenuButton;

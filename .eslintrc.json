@@ -2,6 +2,7 @@
   "extends": "airbnb",
   "plugins": [
     "react",
-    "react-native"
+    "react-native",
+    "jsx-a11y"
   ]
 }

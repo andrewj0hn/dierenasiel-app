@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styles from './styles';
 import { STATUS_BAR_STYLE } from '../../constants/Styles';
 
-const StatusBar = ({ height = 0 }) => (
+const StatusBar = ({ height }) => (
   <View>
     <StatusBarRN barStyle={STATUS_BAR_STYLE} />
     <View style={[styles.statusBarHeight, { height }]} />
@@ -14,6 +14,10 @@ const StatusBar = ({ height = 0 }) => (
 
 StatusBar.propTypes = {
   height: PropTypes.number,
+};
+
+StatusBar.defaultProps = {
+  height: 0,
 };
 
 export default StatusBar;

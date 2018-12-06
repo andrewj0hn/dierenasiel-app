@@ -24,6 +24,11 @@ Home.propTypes = {
   onMenuButtonClick: PropTypes.func,
 };
 
+Home.defaultProps = {
+  sidebarIsOpen: false,
+  onMenuButtonClick: () => {},
+};
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps,

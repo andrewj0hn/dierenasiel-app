@@ -1,6 +1,8 @@
 // @flow
-export default (state) => {
-  console.log('state', state);
-  const { menu } = state;
-  return { ...menu };
+type State = {
+  menu: {
+    menuIsOpen: boolean,
+  },
 };
+
+export default ({ menu }: State) => ({ ...menu });

@@ -1,7 +1,8 @@
 // @flow
 import { toggleSidebar } from '../../actions/menu';
+import type { Dispatch } from '../../types';
 
-export default (dispatch) => {
+export default (dispatch: Dispatch) => {
   console.log('dispatch');
   return {
     onMenuButtonClick: () => {

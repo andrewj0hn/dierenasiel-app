@@ -1,6 +1,6 @@
 // @flow
-import * as types from '../constants/ActionTypes';
+import type { MenuAction } from '../types/menu';
 
-export const toggleSidebar = () => ({
-  type: types.TOGGLE_SIDEBAR,
+export const toggleSidebar = (): MenuAction => ({
+  type: 'TOGGLE_MENU',
 });

@@ -1,20 +1,15 @@
 // @flow
 import React from 'react';
 import { View } from 'react-native';
-import PropTypes from 'prop-types';
 import MenuButton from '../MenuButton';
 import HeaderTitle from '../HeaderTitle';
 import styles from './styles';
 
-const propTypes = {
-  onMenuButtonClick: PropTypes.func,
+type Props = {
+  onMenuButtonClick: () => any
 };
 
-const defaultProps = {
-  onMenuButtonClick: () => {},
-}
-
-const Header = ({ onMenuButtonClick }) => {
+const Header = ({ onMenuButtonClick }: Props) => {
   console.log('onMenuButtonClick');
   return (
     <View style={styles.container}>
@@ -23,8 +18,5 @@ const Header = ({ onMenuButtonClick }) => {
     </View>
   );
 };
-
-Header.propTypes = propTypes;
-Header.defaultProps = defaultProps;
 
 export default Header;

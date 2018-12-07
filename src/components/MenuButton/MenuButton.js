@@ -1,18 +1,13 @@
 // @flow
 import React from 'react';
 import { View, TouchableHighlight } from 'react-native';
-import PropTypes from 'prop-types';
 import styles from './styles';
 
-const propTypes = {
-  onPress: PropTypes.func,
+type Props = {
+  onPress: () => any,
 };
 
-const defaultProps = {
-  onPress: () => {},
-};
-
-const MenuButton = ({ onPress }) => (
+const MenuButton = ({ onPress }: Props) => (
   <View>
     <TouchableHighlight
       underlayColor="green"
@@ -26,8 +21,5 @@ const MenuButton = ({ onPress }) => (
     </TouchableHighlight>
   </View>
 );
-
-MenuButton.propTypes = propTypes;
-MenuButton.defaultProps = defaultProps;
 
 export default MenuButton;

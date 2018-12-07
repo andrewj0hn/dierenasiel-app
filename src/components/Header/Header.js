@@ -6,6 +6,14 @@ import MenuButton from '../MenuButton';
 import HeaderTitle from '../HeaderTitle';
 import styles from './styles';
 
+const propTypes = {
+  onMenuButtonClick: PropTypes.func,
+};
+
+const defaultProps = {
+  onMenuButtonClick: () => {},
+}
+
 const Header = ({ onMenuButtonClick }) => {
   console.log('onMenuButtonClick');
   return (
@@ -16,8 +24,7 @@ const Header = ({ onMenuButtonClick }) => {
   );
 };
 
-Header.propTypes = {
-  onMenuButtonClick: PropTypes.func,
-};
+Header.propTypes = propTypes;
+Header.defaultProps = defaultProps;
 
 export default Header;

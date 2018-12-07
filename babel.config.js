@@ -1,7 +1,13 @@
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(false);
+
+  const presets = [
+    ['module:metro-react-native-babel-preset'],
+  ];
+  const plugins = [];
 
   return {
-    presets: ['module:metro-react-native-babel-preset'],
+    presets,
+    plugins,
   };
 };

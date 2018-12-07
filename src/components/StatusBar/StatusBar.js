@@ -1,5 +1,5 @@
 // @flow
-import * as React from 'react';
+import React from 'react';
 import { StatusBar as StatusBarRN, View } from 'react-native';
 import styles from './styles';
 import { STATUS_BAR_STYLE } from '../../constants/Styles';

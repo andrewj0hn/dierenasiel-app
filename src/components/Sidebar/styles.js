@@ -10,4 +10,7 @@ export default StyleSheet.create({
     bottom: 0,
     backgroundColor: 'blue',
   },
+  containerWidth: menuIsOpen => ({
+    width: menuIsOpen ? 250 : 0,
+  }),
 });

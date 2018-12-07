@@ -10,24 +10,27 @@ import styles from './styles';
 import mapStateToProps from './mapStateToProps';
 import mapDispatchToProps from './mapDispatchToProps';
 
-const Home = ({ sidebarIsOpen, onMenuButtonClick }) => (
-  <View style={styles.container}>
-    <Header onMenuButtonClick={onMenuButtonClick} />
-    <Sidebar sidebarIsOpen={sidebarIsOpen} />
-    <Text>Home</Text>
-    <FeaturedArticle />
-  </View>
-);
-
-Home.propTypes = {
+const propTypes = {
   sidebarIsOpen: PropTypes.bool,
   onMenuButtonClick: PropTypes.func,
 };
 
-Home.defaultProps = {
+const defaultProps = {
   sidebarIsOpen: false,
   onMenuButtonClick: () => {},
 };
+
+const Home = ({ sidebarIsOpen, onMenuButtonClick }) => (
+  <View style={styles.container}>
+    <Header onMenuButtonClick={onMenuButtonClick} />
+    <Sidebar sidebarIsOpen={sidebarIsOpen} />
+    <Text>Home __ placeholder</Text>
+    <FeaturedArticle />
+  </View>
+);
+
+Home.propTypes = propTypes;
+Home.defaultProps = defaultProps;
 
 export default connect(
   mapStateToProps,

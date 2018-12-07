@@ -7,6 +7,14 @@ import {
   SIDEBAR, CATS, DOGS, CONTACT, SETTINGS,
 } from '../../constants/Strings';
 
+const propTypes = {
+  sidebarIsOpen: PropTypes.bool,
+};
+
+const defaultProps = {
+  sidebarIsOpen: false,
+};
+
 const Sidebar = ({ sidebarIsOpen }) => {
   console.log('sidebarIsOpen', sidebarIsOpen);
   return (
@@ -20,12 +28,7 @@ const Sidebar = ({ sidebarIsOpen }) => {
   );
 };
 
-Sidebar.propTypes = {
-  sidebarIsOpen: PropTypes.bool,
-};
-
-Sidebar.defaultProps = {
-  sidebarIsOpen: false,
-};
+Sidebar.propTypes = propTypes;
+Sidebar.defaultProps = defaultProps;
 
 export default Sidebar;

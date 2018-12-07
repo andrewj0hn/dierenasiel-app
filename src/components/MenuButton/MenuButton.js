@@ -4,6 +4,14 @@ import { View, TouchableHighlight } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
+const propTypes = {
+  onPress: PropTypes.func,
+};
+
+const defaultProps = {
+  onPress: () => {},
+};
+
 const MenuButton = ({ onPress }) => (
   <View>
     <TouchableHighlight
@@ -19,12 +27,7 @@ const MenuButton = ({ onPress }) => (
   </View>
 );
 
-MenuButton.propTypes = {
-  onPress: PropTypes.func,
-};
-
-MenuButton.defaultProps = {
-  onPress: () => {},
-};
+MenuButton.propTypes = propTypes;
+MenuButton.defaultProps = defaultProps;
 
 export default MenuButton;

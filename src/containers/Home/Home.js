@@ -16,7 +16,6 @@ type Props = {
 
 const defaultProp = {
   menuIsOpen: false,
-  onMenuButtonClick: () => {},
 };
 
 const Home = ({ menuIsOpen, onMenuButtonClick }: Props) => (

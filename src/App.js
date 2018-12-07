@@ -13,13 +13,15 @@ const middlewares = compose(applyMiddleware(thunk, logger));
 const store = createStore(reducers, undefined, middlewares);
 const { StatusBarManager } = NativeModules;
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      statusBarHeight: 0,
-    };
-  }
+type Props = {};
+type State = {
+  statusBarHeight: number,
+};
+
+class App extends Component<Props, State> {
+  state = {
+    statusBarHeight: 0,
+  };
 
   componentDidMount() {
     if (Platform.OS === 'ios') {

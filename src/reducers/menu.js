@@ -1,15 +1,16 @@
 // @flow
-import { TOGGLE_SIDEBAR } from '../constants/ActionTypes';
+import type { Action } from '../types';
+import type { MenuIsOpen } from '../types/menu';
 
-export default (state = {
-  sidebarIsOpen: false,
-}, action) => {
+const menu = (state: MenuIsOpen = { menuIsOpen: false }, action: Action) => {
   switch (action.type) {
-    case TOGGLE_SIDEBAR: {
-      const { sidebarIsOpen } = state;
-      return Object.assign({}, state, { sidebarIsOpen: !sidebarIsOpen });
+    case 'TOGGLE_MENU': {
+      const { menuIsOpen } = state;
+      return Object.assign({}, state, { menuIsOpen: !menuIsOpen });
     }
     default:
       return state;
   }
 };
+
+export default menu;

@@ -1,26 +1,24 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import { StatusBar as StatusBarRN, View } from 'react-native';
-import PropTypes from 'prop-types';
 import styles from './styles';
 import { STATUS_BAR_STYLE } from '../../constants/Styles';
 
-const propTypes = {
-  height: PropTypes.number,
+type Props = {
+  height: number,
 };
 
-const defaultProps = {
+const defaultProp = {
   height: 0,
 };
 
-const StatusBar = ({ height }) => (
+const StatusBar = ({ height }: Props) => (
   <View>
     <StatusBarRN barStyle={STATUS_BAR_STYLE} />
     <View style={[styles.statusBarHeight, { height }]} />
   </View>
 );
 
-StatusBar.propTypes = propTypes;
-StatusBar.defaultProps = defaultProps;
+StatusBar.defaultProp = defaultProp;
 
 export default StatusBar;

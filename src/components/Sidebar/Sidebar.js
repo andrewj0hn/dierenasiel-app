@@ -1,24 +1,23 @@
 // @flow
 import React from 'react';
 import { View, Text } from 'react-native';
-import PropTypes from 'prop-types';
 import styles from './styles';
 import {
   SIDEBAR, CATS, DOGS, CONTACT, SETTINGS,
 } from '../../constants/Strings';
 
-const propTypes = {
-  sidebarIsOpen: PropTypes.bool,
+type Props = {
+  menuIsOpen: boolean,
 };
 
-const defaultProps = {
-  sidebarIsOpen: false,
+const defaultProp = {
+  menuIsOpen: false,
 };
 
-const Sidebar = ({ sidebarIsOpen }) => {
-  console.log('sidebarIsOpen', sidebarIsOpen);
+const Sidebar = ({ menuIsOpen }: Props) => {
+  console.log('menuIsOpen', menuIsOpen);
   return (
-    <View style={[styles.container, { width: sidebarIsOpen ? 250 : 0 }]}>
+    <View style={[styles.container, { width: menuIsOpen ? 250 : 0 }]}>
       <Text>{SIDEBAR}</Text>
       <Text>{CATS}</Text>
       <Text>{DOGS}</Text>
@@ -28,7 +27,6 @@ const Sidebar = ({ sidebarIsOpen }) => {
   );
 };
 
-Sidebar.propTypes = propTypes;
-Sidebar.defaultProps = defaultProps;
+Sidebar.defaultProp = defaultProp;
 
 export default Sidebar;

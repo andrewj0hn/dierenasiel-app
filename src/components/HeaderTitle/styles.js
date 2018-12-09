@@ -1,5 +1,6 @@
 // @flow
 import { StyleSheet } from 'react-native';
+import { EXTRA_BOLD, WHITE } from '../../constants/Styles';
 
 export default StyleSheet.create({
   container: {
@@ -13,7 +14,9 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 15,
-    letterSpacing: 0.8,
+    fontSize: 16,
+    fontWeight: EXTRA_BOLD,
+    letterSpacing: 0.4,
+    color: WHITE,
   },
 });

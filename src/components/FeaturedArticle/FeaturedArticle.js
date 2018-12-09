@@ -1,9 +1,21 @@
 // @flow
 import React from 'react';
-import { Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import styles from './styles';
 
-const FeaturedArticle = () => (
-  <Text>Dit is een test</Text>
+type Props = {
+  id: number,
+  title: string,
+  text: string,
+  image: string
+};
+
+const FeaturedArticle = ({ id, title, text, image }: Props) => (
+  <View style={styles.container}>
+    <Image style={styles.image} source={{ uri: image }} />
+    <Text>{title}</Text>
+    <Text>{text}</Text>
+  </View>
 );
 
 export default FeaturedArticle;

@@ -1,8 +1,9 @@
 // @flow
-type State = {
-  menu: {
-    menuIsOpen: boolean,
-  },
-};
+import type { State } from '../../types';
 
-export default ({ menu }: State) => ({ ...menu });
+export default (state: State) => {
+  console.log('state', state);
+  return {
+    ...state.menu, ...state.featuredArticles,
+  };
+};

@@ -1,6 +1,6 @@
 // @flow
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { Component } from 'react';
+import { View } from 'react-native';
 import { connect } from 'react-redux';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
@@ -11,23 +11,43 @@ import mapDispatchToProps from './mapDispatchToProps';
 
 type Props = {
   menuIsOpen: boolean,
+  items: any,
+  isFetchingItems: boolean,
   onMenuButtonClick: () => any,
+  fetchFeaturedArticles: () => any,
 };
 
-const defaultProp = {
-  menuIsOpen: false,
-};
+class Home extends Component<Props> {
+  static defaultProps = {
+    menuIsOpen: false,
+    items: [],
+    isFetchingItems: false,
+  };
 
-const Home = ({ menuIsOpen, onMenuButtonClick }: Props) => (
-  <View style={styles.container}>
-    <Header onMenuButtonClick={onMenuButtonClick} />
-    <Sidebar menuIsOpen={menuIsOpen} />
-    <Text>Home __ placeholder</Text>
-    <FeaturedArticle />
-  </View>
-);
+  componentDidMount() {
+    const { fetchFeaturedArticles } = this.props;
+    fetchFeaturedArticles();
+  }
 
-Home.defaultProp = defaultProp;
+  render() {
+    const {
+      menuIsOpen, onMenuButtonClick, items, isFetchingItems,
+    } = this.props;
+    console.log('items', items);
+    console.log('isFetchingItems', isFetchingItems);
+    return (
+      <View style={styles.container}>
+        <Header onMenuButtonClick={onMenuButtonClick} />
+        <Sidebar menuIsOpen={menuIsOpen} />
+        <View style={styles.content}>
+          { items.map(featuredArticle => (
+            <FeaturedArticle key={featuredArticle.id} {...featuredArticle} />
+          ))}
+        </View>
+      </View>
+    );
+  }
+}
 
 export default connect(
   mapStateToProps,

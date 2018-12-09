@@ -1,16 +1,30 @@
 // @flow
 import { StyleSheet } from 'react-native';
-import { HEADER_HEIGHT } from '../../constants/Styles';
+import {
+  BLACK, EXTRA_BOLD, HEADER_HEIGHT, MIDDLE_LAYER, SIDEBAR_COLOR,
+} from '../../constants/Styles';
 
 export default StyleSheet.create({
   container: {
+    flexDirection: 'column',
     position: 'absolute',
+    zIndex: MIDDLE_LAYER,
     top: HEADER_HEIGHT,
-    right: 0,
+    left: 0,
     bottom: 0,
-    backgroundColor: 'blue',
+    justifyContent: 'center',
+    backgroundColor: SIDEBAR_COLOR,
+    shadowColor: BLACK,
+    shadowOffset: { width: 2, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 1,
   },
-  containerWidth: menuIsOpen => ({
-    width: menuIsOpen ? 250 : 0,
-  }),
+  label: {
+    fontSize: 16,
+    fontWeight: EXTRA_BOLD,
+    letterSpacing: 0.4,
+    marginVertical: 10,
+    paddingVertical: 10,
+    textAlign: 'center',
+  },
 });

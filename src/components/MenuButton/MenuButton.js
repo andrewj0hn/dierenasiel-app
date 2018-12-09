@@ -9,10 +9,7 @@ type Props = {
 
 const MenuButton = ({ onPress }: Props) => (
   <View>
-    <TouchableHighlight
-      underlayColor="green"
-      onPress={onPress}
-    >
+    <TouchableHighlight onPress={onPress}>
       <View style={styles.container}>
         <View style={styles.line} />
         <View style={styles.line} />

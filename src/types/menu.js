@@ -1,7 +1,5 @@
 // @flow
-export type MenuIsOpen = {
-  menuIsOpen: boolean,
-};
+export type MenuIsOpen = boolean;
 
 export type MenuState = {
   menuIsOpen: MenuIsOpen,

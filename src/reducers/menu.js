@@ -1,8 +1,8 @@
 // @flow
 import type { Action } from '../types';
-import type { MenuIsOpen } from '../types/menu';
+import type { MenuState } from '../types/menu';
 
-const menu = (state: MenuIsOpen = { menuIsOpen: false }, action: Action) => {
+const menu = (state: MenuState = { menuIsOpen: false }, action: Action): MenuState => {
   switch (action.type) {
     case 'TOGGLE_MENU': {
       const { menuIsOpen } = state;

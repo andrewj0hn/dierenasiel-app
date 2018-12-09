@@ -1,16 +1,11 @@
 // @flow
 import React, { Component } from 'react';
 import { Platform, View, NativeModules } from 'react-native';
-import { applyMiddleware, compose, createStore } from 'redux';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
+import { Store } from './config';
 import StatusBar from './components/StatusBar/StatusBar';
-import reducers from './reducers';
 import Home from './containers/Home';
 
-const middlewares = compose(applyMiddleware(thunk, logger));
-const store = createStore(reducers, undefined, middlewares);
 const { StatusBarManager } = NativeModules;
 
 type Props = {};
@@ -34,7 +29,7 @@ class App extends Component<Props, State> {
   render() {
     const { statusBarHeight } = this.state;
     return (
-      <Provider store={store}>
+      <Provider store={Store}>
         <View style={{ flex: 1 }}>
           <StatusBar height={statusBarHeight} />
           <Home />

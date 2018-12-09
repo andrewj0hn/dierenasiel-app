@@ -1,13 +1,15 @@
 // @flow
+import { Dispatch } from 'redux';
 import { toggleSidebar } from '../../actions/menu';
-import type { Dispatch } from '../../types';
+import { fetchFeaturedArticles } from '../../actions/featuredArticles';
 
-export default (dispatch: Dispatch) => {
-  console.log('dispatch');
-  return {
-    onMenuButtonClick: () => {
-      console.log('onMenuButtonClick');
-      return dispatch(toggleSidebar());
-    },
-  };
-};
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  fetchFeaturedArticles: () => {
+    dispatch(fetchFeaturedArticles());
+  },
+  onMenuButtonClick: () => {
+    dispatch(toggleSidebar());
+  },
+});
+
+export default mapDispatchToProps;

@@ -9,14 +9,11 @@ type Props = {
   onMenuButtonClick: () => any
 };
 
-const Header = ({ onMenuButtonClick }: Props) => {
-  console.log('onMenuButtonClick');
-  return (
-    <View style={styles.container}>
-      <MenuButton onPress={onMenuButtonClick} />
-      <HeaderTitle />
-    </View>
-  );
-};
+const Header = ({ onMenuButtonClick }: Props) => (
+  <View style={styles.container}>
+    <MenuButton onPress={onMenuButtonClick} />
+    <HeaderTitle />
+  </View>
+);
 
 export default Header;

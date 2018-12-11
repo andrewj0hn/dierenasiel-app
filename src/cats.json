@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "name": "Jane",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Jane%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 2,
+    "name": "Donder",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Donder%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 3,
+    "name": "Angelo",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Angelo%20(1).jpg",
+    "status": 2
+  },
+  {
+    "id": 4,
+    "name": "Sierra",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Sierra%20(1).JPG",
+    "status": 4
+  },
+  {
+    "id": 5,
+    "name": "Mona",
+    "race": "Europees korthaar",
+    "age": "Kitten",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Mona.JPG",
+    "status": 2
+  },
+  {
+    "id": 6,
+    "name": "Gerrit",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Gerrit%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 7,
+    "name": "Karel",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Karel%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 8,
+    "name": "Snoopy",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Snoopy%20(2).JPG",
+    "status": 4
+  },
+  {
+    "id": 9,
+    "name": "Paco",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Paco.jpg",
+    "status": 2
+  },
+  {
+    "id": 10,
+    "name": "Tara",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Tara.JPG",
+    "status": 2
+  },
+  {
+    "id": 11,
+    "name": "Verdi",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Verdi%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 12,
+    "name": "Xander",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Xander%20(1).JPG",
+    "status": 4
+  },
+  {
+    "id": 13,
+    "name": "Renske",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Renske.JPG",
+    "status": 4
+  },
+  {
+    "id": 14,
+    "name": "Yvonne",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Yvonne%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 15,
+    "name": "Henk",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Henk%20(1).JPG",
+    "status": 2
+  },
+  {
+    "id": 16,
+    "name": "Noortje",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Noortje.JPG",
+    "status": 2
+  },
+  {
+    "id": 17,
+    "name": "Epke",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Epke%20(2).JPG",
+    "status": 2
+  },
+  {
+    "id": 18,
+    "name": "Mike",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Mike%20(1).jpg",
+    "status": 2
+  },
+  {
+    "id": 19,
+    "name": "Tirza, Tito, Tinus en Tom",
+    "race": "Europees korthaar",
+    "age": "Kitten",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Tinus%20&%20Tirza.JPG",
+    "status": 2
+  },
+  {
+    "id": 20,
+    "name": "Pukkie",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/20181111_113802.jpg",
+    "status": 1
+  },
+  {
+    "id": 21,
+    "name": "Cora",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Cora.jpg",
+    "status": 1
+  },
+  {
+    "id": 22,
+    "name": "Martje",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Martje%20(1).jpg",
+    "status": 4
+  },
+  {
+    "id": 23,
+    "name": "Canei",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Canei%20(1).jpg",
+    "status": 1
+  },
+  {
+    "id": 24,
+    "name": "Stuiter",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Stuiterr.JPG",
+    "status": 1
+  },
+  {
+    "id": 25,
+    "name": "Joep",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Kater",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Joep%20(2).JPG",
+    "status": 1
+  },
+  {
+    "id": 26,
+    "name": "Dieuwertje",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Dieuwertje%20(2).JPG",
+    "status": 1
+  },
+  {
+    "id": 27,
+    "name": "Lilo",
+    "race": "Europees korthaar",
+    "age": "Volwassen",
+    "sex": "Poes",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Lilo%20(4).JPG",
+    "status": 1
+  }
+]

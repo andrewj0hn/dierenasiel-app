@@ -1,14 +1,21 @@
 // @flow
-import type { Store as ReduxStore, Dispatch as ReduxDispatch } from 'redux';
-
-import type { MenuState, MenuAction } from './menu';
+import type { SideMenuAction, SideMenuState } from './sideMenu';
+import type { FeaturedArticlesAction, FeaturedArticlesState } from './featuredArticles';
+import type { DogsState, DogsAction } from './dogs';
+import type { CatsState, CatsAction } from './cats';
 
 export type ReduxInitAction = { type: '@@INIT' };
 
-export type State = MenuState;
+export type State = {
+  sideMenu: SideMenuState,
+  featuredArticles: FeaturedArticlesState,
+  dogs: DogsState,
+  cats: CatsState,
+}
 
-export type Action = ReduxInitAction | MenuAction;
-
-export type Store = ReduxStore<State, Action>;
-
-export type Dispatch = ReduxDispatch<Action>;
+export type Action =
+  ReduxInitAction |
+  SideMenuAction |
+  FeaturedArticlesAction |
+  DogsAction |
+  CatsAction;

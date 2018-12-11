@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Bobby",
+    "race": "Labradoodle",
+    "age": "Volwassen",
+    "sex": "Reu",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Bobby%20doodle%20%20(3).JPG",
+    "status": 2
+  },
+  {
+    "id": 2,
+    "name": "James",
+    "race": "Bullterriër x Jack Russel",
+    "age": "Volwassen",
+    "sex": "Reu",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/James%20(3).JPG",
+    "status": 1
+  },
+  {
+    "id": 3,
+    "name": "Xena",
+    "race": "Kruising Stafford",
+    "age": "Volwassen",
+    "sex": "Teef",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Xena%20(3).JPG",
+    "status": 1
+  },
+  {
+    "id": 4,
+    "name": "Assie",
+    "race": "X Greyhound",
+    "age": "Volwassen",
+    "sex": "Reu",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Assie%20(2).JPG",
+    "status": 3
+  },
+  {
+    "id": 5,
+    "name": "Django",
+    "race": "Kruising Herder",
+    "age": "Volwassen",
+    "sex": "Reu",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Django%20(3).JPG",
+    "status": 1
+  },
+  {
+    "id": 6,
+    "name": "Moos",
+    "race": "Kruising Jack Russel",
+    "age": "Volwassen",
+    "sex": "Reu",
+    "image": "https://www.dierenasielutrecht.nl/upload/dieren/Moos%20hoofd.jpg",
+    "status": 1
+  }
+]

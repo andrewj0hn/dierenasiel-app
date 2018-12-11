@@ -1,31 +1,31 @@
 // @flow
 import React, { Component } from 'react';
-import { View, FlatList } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { connect } from 'react-redux';
-import SideMenu from '../../components/SideMenu';
-import FeaturedArticle from '../../components/FeaturedArticle';
-import styles from '../styles';
 import mapStateToProps from '../mapStateToProps';
 import mapDispatchToProps from '../mapDispatchToProps';
-import { HOMEPAGE_TITLE } from '../../constants/Strings';
-import MenuButton from '../../components/MenuButton';
+import styles from '../styles';
+import ListItem from '../../components/ListItem';
+import { DOGS } from '../../constants/Strings';
 import { keyExtractor, listFooterComponent } from '../helpers';
+import MenuButton from '../../components/MenuButton';
+import SideMenu from '../../components/SideMenu';
 
 type Props = {
   navigation: Object,
-  featuredArticles: [],
-  isFetchingFeaturedArticles: false,
+  dogs: [],
+  isFetchingDogs: false,
   sideMenuIsOpen: false,
-  onMenuButtonPress: Function,
   onSideMenuItemPress: Function,
-  fetchFeaturedArticles: Function,
-};
+  onMenuButtonPress: Function,
+  fetchDogs: Function,
+}
 
-class Home extends Component<Props> {
+class Dogs extends Component<Props> {
   static navigationOptions = ({ navigation }) => {
     const onMenuButtonPress = navigation.getParam('onMenuButtonPress');
     return {
-      title: HOMEPAGE_TITLE,
+      title: DOGS,
       headerLeft: (
         <MenuButton onMenuButtonPress={onMenuButtonPress} />
       ),
@@ -33,22 +33,22 @@ class Home extends Component<Props> {
   };
 
   componentDidMount() {
-    const { fetchFeaturedArticles, navigation, onMenuButtonPress } = this.props;
-    fetchFeaturedArticles();
+    const { fetchDogs, navigation, onMenuButtonPress } = this.props;
+    fetchDogs();
     navigation.setParams({ onMenuButtonPress });
   }
 
   renderItem = ({ item }) => (
-    <FeaturedArticle {...item} />
+    <ListItem {...item} />
   );
 
   render() {
-    const { featuredArticles, sideMenuIsOpen, onSideMenuItemPress } = this.props;
+    const { dogs, sideMenuIsOpen, onSideMenuItemPress } = this.props;
     return (
       <View style={styles.container}>
         <SideMenu sideMenuIsOpen={sideMenuIsOpen} onSideMenuItemPress={onSideMenuItemPress} />
         <FlatList
-          data={featuredArticles}
+          data={dogs}
           style={styles.content}
           keyExtractor={keyExtractor}
           renderItem={this.renderItem}
@@ -62,4 +62,4 @@ class Home extends Component<Props> {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Home);
+)(Dogs);

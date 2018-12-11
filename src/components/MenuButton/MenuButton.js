@@ -2,14 +2,15 @@
 import React from 'react';
 import { View, TouchableHighlight } from 'react-native';
 import styles from './styles';
+import { HEADER_COLOR } from '../../constants/Styles';
 
 type Props = {
-  onPress: () => any,
+  onMenuButtonPress: Function,
 };
 
-const MenuButton = ({ onPress }: Props) => (
+const MenuButton = ({ onMenuButtonPress }: Props) => (
   <View>
-    <TouchableHighlight onPress={onPress}>
+    <TouchableHighlight underlayColor={HEADER_COLOR} onPress={onMenuButtonPress}>
       <View style={styles.container}>
         <View style={styles.line} />
         <View style={styles.line} />

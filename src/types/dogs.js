@@ -11,7 +11,7 @@ export type Color = string;
 export type NeuteredSterilized = boolean;
 export type Arrived = string;
 export type DateOfBirth = string;
-export type Images = Array;
+export type Images = Array<string>;
 
 export type Dog = {
   id: Id,

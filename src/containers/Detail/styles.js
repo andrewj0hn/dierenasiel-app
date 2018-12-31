@@ -1,15 +1,11 @@
 // @flow
 import { StyleSheet } from 'react-native';
 import { EXTRA_BOLD, LIGHT, WHITE } from '../../constants/Styles';
-import { statusBackgroundColor } from '../../helpers';
 
 export default StyleSheet.create({
   text: {
     fontWeight: LIGHT,
   },
-  statusBarBackgroundColor: status => ({
-    backgroundColor: statusBackgroundColor(status),
-  }),
   statusBar: {
     height: 26,
     flexDirection: 'row',

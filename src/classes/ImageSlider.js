@@ -1,5 +1,13 @@
 // @flow
 class ImageSlider {
+  index: number;
+
+  total: number;
+
+  beginValue: number;
+
+  endValue: number;
+
   constructor() {
     this.index = 0;
     this.total = 0;
@@ -11,7 +19,7 @@ class ImageSlider {
     return this.index;
   }
 
-  setIndex(index) {
+  setIndex(index: number) {
     this.index = index;
   }
 
@@ -19,16 +27,16 @@ class ImageSlider {
     return this.total;
   }
 
-  setTotal(amount) {
+  setTotal(amount: number) {
     this.total = amount;
   }
 
-  setBeginValue(contentOffset) {
+  setBeginValue(contentOffset: Object) {
     const { x } = contentOffset;
     this.beginValue = x;
   }
 
-  setEndvalue(contentOffset) {
+  setEndvalue(contentOffset: Object) {
     const { x } = contentOffset;
     this.endValue = x;
   }

@@ -1,9 +1,6 @@
 // @flow
 import { StyleSheet } from 'react-native';
-import {
-  DOT_DEFAULT_COLOR, WINDOW_WIDTH,
-} from '../../constants/Styles';
-import { statusBackgroundColorOpacity } from '../../helpers/statusBar';
+import { WINDOW_WIDTH } from '../../constants/Styles';
 
 const styleSheet = StyleSheet.create({
   image: {
@@ -24,12 +21,6 @@ const styleSheet = StyleSheet.create({
     marginHorizontal: 3,
     borderRadius: 5,
     backgroundColor: 'blue',
-  },
-  dotBackgroundColor: (status, activeIndex, currentIndex) => {
-    const backgroundColor = statusBackgroundColorOpacity(status);
-    return {
-      backgroundColor: activeIndex === currentIndex ? backgroundColor : DOT_DEFAULT_COLOR,
-    };
   },
 });
 

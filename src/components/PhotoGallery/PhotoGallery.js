@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 import { Image, View, FlatList } from 'react-native';
 import ImageSlider from '../../classes';
 import styles from './styles';
+import { statusBackgroundColorOpacity } from '../../helpers/statusBar';
+import { DOT_DEFAULT_COLOR } from '../../constants/Styles';
 
 type Props = {
-  images: Array,
+  images: Array<string>,
   status: number,
 }
 
@@ -14,24 +16,28 @@ type State = {
 }
 
 class PhotoGallery extends Component<Props, State> {
-  constructor(props) {
+  flatListRef: any;
+
+  imageSlider: any;
+
+  constructor(props: Object) {
     super(props);
     this.flatListRef = null;
     this.imageSlider = new ImageSlider();
     this.state = { activeIndex: 0 };
   }
 
-  renderItem = ({ item }) => (
+  renderItem = ({ item }: Object) => (
     <Image key={item} source={{ uri: item }} style={styles.image} />
   );
 
-  onScrollBeginDrag = (event) => {
+  onScrollBeginDrag = (event: Object) => {
     const { nativeEvent } = event;
     const { contentOffset } = nativeEvent;
     this.imageSlider.setBeginValue(contentOffset);
   };
 
-  onScrollEndDrag = (event) => {
+  onScrollEndDrag = (event: Object) => {
     const { nativeEvent } = event;
     const { contentOffset } = nativeEvent;
     this.imageSlider.setEndvalue(contentOffset);
@@ -53,6 +59,13 @@ class PhotoGallery extends Component<Props, State> {
     } else {
       this.flatListRef.scrollToIndex({ index: currentIndex });
     }
+  };
+
+  dotBackgroundColor = (status: number, activeIndex: number, currentIndex: number) => {
+    const backgroundColor = statusBackgroundColorOpacity(status);
+    return {
+      backgroundColor: activeIndex === currentIndex ? backgroundColor : DOT_DEFAULT_COLOR,
+    };
   };
 
   render() {
@@ -78,7 +91,7 @@ class PhotoGallery extends Component<Props, State> {
           {images.map((dot, index) => (
             <View
               key={dot}
-              style={[styles.dot, styles.dotBackgroundColor(status, activeIndex, index)]}
+              style={[styles.dot, this.dotBackgroundColor(status, activeIndex, index)]}
             />
           ))}
         </View>

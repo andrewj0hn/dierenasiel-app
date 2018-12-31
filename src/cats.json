@@ -6,7 +6,16 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Jane%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "description": "Dit bange, verlegen meisje heet Jane, een poes van 4 jaar oud.  Jane is als vondeling bij ons binnen gebracht.  Ze valt onder de categorie schuwe katten, dat betekend dat ze geen mensen gewend is. Toch laat ze zich door vertrouwde mensen stiekem wel eens aaien.  Voor Jane is het fijn als ze in het begin haar eigen kamer krijgt waarin ze even mag acclimatiseren. Als ze daaraan gewend is zou ze het fijn vinden om vanuit daar het hele huis te mogen ontdekken. Jane is opzoek naar  mensen die haar weer het vertrouwen willen geven.\n\nHeeft u alle tijd en liefde over voor Jane?\nKom dan snel eens langs.\n\n \n\nSchuwe katten info:\n\nEen schuwe kat moet lang wennen in een nieuwe omgeving. Het belangrijkste is vertrouwen winnen hierbij is het, het beste als het een rustige situatie is zonder jonge kinderen en drukte. Bij een schuwe kat is heel veel geduld en (het liefste) ervaring nodig.\n\nEen schuwe kat moet binnenblijven om te voorkomen dat hij ontsnapt. \nLaat een schuwe kat in het begin nooit gelijk los in huis, maar zet hem of haar de eerste weken apart in een kamer met water, voedsel en een kattenbak. Als u dit niet doet en de kat, de vrijheid geeft te gaan waar hij of zij wil, is de kans heel groot dat de kat zich verstopt op plekken waar u er niet bij kunt.\n\nHet zal dan veel langer duren voor hij of zij aan u en de nieuwe omgeving gewend is. Ook is een kleine ruimte voor de kat veel overzichtelijker. Probeer ervoor te zorgen dat de kat wel verstopplekjes heeft in de ruimte waar hij of zij verblijft, maar zodanig dat u er goed bij kan komen. Zet bijvoorbeeld: een kattenmandje neer of een omgekeerde doos (dozen doen het zeer goed bij katten). Bouw de ruimte langzaam uit. Laat bijvoorbeeld na een week of drie de deur eens openstaan en kijk wat de kat doet.\n\nVaak zult u zien dat de kat bij de minste dreiging de kamer weer in rent. Zorg ervoor dat alle ramen en deuren goed dicht zijn, want als de kat de kans krijgt zal hij of zij naar buiten vluchten. Wij adviseren sowieso om van oorsprong schuwe katten nooit naar buiten te laten gaan! Schuwe katten kunnen snel in paniek raken en vluchten. Ook komen ze van oorsprong buiten en verwilderen ze snel.",
+    "color": "Cyper-wit",
+    "neutered_sterilized": true,
+    "arrived": "6-9-2018",
+    "date_of_birth": "7-7-2017",
+    "images": [
+      "https://www.dierenasielutrecht.nl/upload/dieren/Jane%20(1).JPG",
+      "https://www.dierenasielutrecht.nl/upload/dieren/Jane%20(2).JPG"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +24,18 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Donder%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "description": "Deze parmantige dame heet Donder, ze is ongeveer 8 jaar oud. Donder is op straat gevonden helaas is niemand haar opkomen halen. We weten dus niks over haar verleden.\nWel is ons duidelijk dat ze niet van andere katten houdt. Die worden door deze dame hoogst persoonlijk uit haar buurt gehouden.  Ze is dan ook op zoek naar een huisje zonder andere katten. Het liefste heeft ze een eigen plek met de mogelijkheid om naar buiten te kunnen. Daar waar het niet te druk is, want van druktes wordt ze een beetje humeurig. \nOmdat Donder nog al een pittige tante is, is ze het beste af bij ervaren baasjes zonder kinderen.  Iemand die haar goed kan lezen en haar af en toe ook op haar plek wijst.\n\nMet deze dame zal u geen andere katten meer in de tuin zien,\nMag ze uw tuin verdedigen misschien?",
+    "color": "Cyper",
+    "neutered_sterilized": true,
+    "arrived": "25-10-2018",
+    "date_of_birth": " 1-9-2011",
+    "images": [
+      "https://www.dierenasielutrecht.nl/upload/dieren/Donder%20(1).JPG",
+      "https://www.dierenasielutrecht.nl/upload/dieren/Donder%20(2).JPG",
+      "https://www.dierenasielutrecht.nl/upload/dieren/Donder%20(3).JPG",
+      "https://www.dierenasielutrecht.nl/upload/dieren/Donder.JPG"
+    ]
   },
   {
     "id": 3,
@@ -24,7 +44,15 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Angelo%20(1).jpg",
-    "status": 2
+    "status": 2,
+    "description": "Deze kapitein 1 oog heet Angelo. Angelo is een wat  schuwe kater van ongeveer 4 jaar oud. Hij is als vondeling bij ons terecht gekomen, we weten dus niet veel van zijn verleden. Wel is bekend dat hij altijd met andere katten heeft geleefd.  Angelo is niet veel gewend en zal dus lang binnen moeten wennen  voordat hij naar buiten kan. Angelo mist zijn rechteroog, hij heeft hier zelf geen last van.\n\nAngelo is opzoek naar een rustig huisje waar hij mag wennen op zijn eigen tempo en als hij helemaal gewend is, gaat hij graag weer naar buiten. Angelo vindt het geen probleem als er een andere kat aanwezig  is.\n\nWilt u het vertrouwen weer winnen van Angelo?\nDan zien we u zo!",
+    "color": "Zwart",
+    "neutered_sterilized": true,
+    "arrived": "24-10-2018",
+    "date_of_birth": "1-11-2014",
+    "images": [
+      "https://www.dierenasielutrecht.nl/upload/dieren/Angelo.JPG"
+    ]
   },
   {
     "id": 4,
@@ -33,7 +61,13 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Sierra%20(1).JPG",
-    "status": 4
+    "status": 4,
+    "description": "Deze kapitein 1 oog heet Angelo. Angelo is een wat  schuwe kater van ongeveer 4 jaar oud. Hij is als vondeling bij ons terecht gekomen, we weten dus niet veel van zijn verleden. Wel is bekend dat hij altijd met andere katten heeft geleefd.  Angelo is niet veel gewend en zal dus lang binnen moeten wennen  voordat hij naar buiten kan. Angelo mist zijn rechteroog, hij heeft hier zelf geen last van.\n\nAngelo is opzoek naar een rustig huisje waar hij mag wennen op zijn eigen tempo en als hij helemaal gewend is, gaat hij graag weer naar buiten. Angelo vindt het geen probleem als er een andere kat aanwezig  is.\n\nWilt u het vertrouwen weer winnen van Angelo?\nDan zien we u zo!",
+    "color": "Zwart",
+    "neutered_sterilized": true,
+    "arrived": "24-10-2018",
+    "date_of_birth": "1-11-2014",
+    "images": []
   },
   {
     "id": 5,
@@ -42,7 +76,15 @@
     "age": "Kitten",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Mona.JPG",
-    "status": 2
+    "status": 4,
+    "description": "Deze kleine heldin heet Mona, ze is ongeveer een half jaar oud.  Mona is een schuw meisje die nog veel moet leren. Voordat ze bij ons kwam was ze geen mensen gewend en vond ons doodeng.  Ze vindt mensen nog steeds erg spannend maar laat zich hier al af en toe aaien. Mona is opzoek naar een huisje waar ze alles mag leren op haar eigen tempo. Voor Mona is het heel belangrijk dat er al een andere kat aanwezig is die haar het goed voorbeeld kan geven.\nOmdat Mona geen huiselijke omgeving is gewend is het, het prettigste als ze in het begin haar eigen kamer krijgt en dat ze eerst daar aan mag wennen. Als ze dan vanuit die kamer het huis mag ontdekken geeft dat haar een goed overzicht en meer zelfvertrouwen.\n\nKomt u kennis maken met dit lekkere snoetje?\nWie weet heeft u dan binnenkort een Mona toetje!\n\n \n\n Schuwe katten info:\n\nEen schuwe kat moet lang wennen in een nieuwe omgeving. Het belangrijkste is vertrouwen winnen hierbij is het, het beste als het een rustige situatie is zonder jonge kinderen en drukte. Bij een schuwe kat is heel veel geduld en (het liefste) ervaring nodig.\n\nEen schuwe kat moet binnenblijven om te voorkomen dat hij ontsnapt. \nLaat een schuwe kat in het begin nooit gelijk los in huis, maar zet hem of haar de eerste weken apart in een kamer met water, voedsel en een kattenbak. Als u dit niet doet en de kat, de vrijheid geeft te gaan waar hij of zij wil, is de kans heel groot dat de kat zich verstopt op plekken waar u er niet bij kunt.\n\nHet zal dan veel langer duren voor hij of zij aan u en de nieuwe omgeving gewend is. Ook is een kleine ruimte voor de kat veel overzichtelijker. Probeer ervoor te zorgen dat de kat wel verstopplekjes heeft in de ruimte waar hij of zij verblijft, maar zodanig dat u er goed bij kan komen. Zet bijvoorbeeld: een kattenmandje neer of een omgekeerde doos (dozen doen het zeer goed bij katten). Bouw de ruimte langzaam uit. Laat bijvoorbeeld na een week of drie de deur eens openstaan en kijk wat de kat doet.\n\nVaak zult u zien dat de kat bij de minste dreiging de kamer weer in rent. Zorg ervoor dat alle ramen en deuren goed dicht zijn, want als de kat de kans krijgt zal hij of zij naar buiten vluchten. Wij adviseren sowieso om van oorsprong schuwe katten nooit naar buiten te laten gaan! Schuwe katten kunnen snel in paniek raken en vluchten. Ook komen ze van oorsprong buiten en verwilderen ze snel.",
+    "color": "Zwart-wit",
+    "neutered_sterilized": false,
+    "arrived": "31-8-2018",
+    "date_of_birth": "19-6-2018",
+    "images": [
+      "https://www.dierenasielutrecht.nl/upload/dieren/Mona.JPG"
+    ]
   },
   {
     "id": 6,
@@ -51,7 +93,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Gerrit%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 7,
@@ -60,7 +103,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Karel%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 8,
@@ -69,7 +113,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Snoopy%20(2).JPG",
-    "status": 4
+    "status": 4,
+    "images": []
   },
   {
     "id": 9,
@@ -78,7 +123,15 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Paco.jpg",
-    "status": 2
+    "status": 2,
+    "description": "Dit knappe ventje heet Paco, hij is 5 jaar oud.\n\nPaco is een schuwe kater die langzaam maar zeker begint te snappen dat mensen lang niet zo eng zijn zoals ze eruit zien.  Toch blijft Paco ons liever op een afstandje bekijken.  Omdat Paco langere tijd buiten heeft geleefd is zijn  ritme iets anders dan van ons, eigenlijk precies tegenovergesteld. Overdag slaapt hij het liefste en ’s nachts komt hij tot leven. Paco moet nog even aan ons ritme wennen.  Paco zou het fijn vinden als hij in zijn nieuwe huis een eigen kamer krijgt. Hij kan dan vanuit daar rustig wennen aan zijn nieuwe omgeving. Mag hij vanuit zijn kamer het huis ontdekken dan geeft dat hem een goed overzicht en ook meer zelfvertrouwen.  Paco vindt het ook geen probleem als er een andere sociale kat aanwezig is die hem het goede voorbeeld kan geven.\n\nPaco is wil zo graag een warm thuis, mag hij bij u in huis?\n\n \n\n \n\nSchuwe katten info:\n\nEen schuwe kat moet lang wennen in een nieuwe omgeving. Het belangrijkste is vertrouwen winnen hierbij is het, het beste als het een rustige situatie is zonder jonge kinderen en drukte. Bij een schuwe kat is heel veel geduld en (het liefste) ervaring nodig.\n\nEen schuwe kat moet binnenblijven om te voorkomen dat hij ontsnapt. \nLaat een schuwe kat in het begin nooit gelijk los in huis, maar zet hem of haar de eerste weken apart in een kamer met water, voedsel en een kattenbak. Als u dit niet doet en de kat, de vrijheid geeft te gaan waar hij of zij wil, is de kans heel groot dat de kat zich verstopt op plekken waar u er niet bij kunt.\n\nHet zal dan veel langer duren voor hij of zij aan u en de nieuwe omgeving gewend is. Ook is een kleine ruimte voor de kat veel overzichtelijker. Probeer ervoor te zorgen dat de kat wel verstopplekjes heeft in de ruimte waar hij of zij verblijft, maar zodanig dat u er goed bij kan komen. Zet bijvoorbeeld: een kattenmandje neer of een omgekeerde doos (dozen doen het zeer goed bij katten). Bouw de ruimte langzaam uit. Laat bijvoorbeeld na een week of drie de deur eens openstaan en kijk wat de kat doet.\n\nVaak zult u zien dat de kat bij de minste dreiging de kamer weer in rent. Zorg ervoor dat alle ramen en deuren goed dicht zijn, want als de kat de kans krijgt zal hij of zij naar buiten vluchten. Wij adviseren sowieso om van oorsprong schuwe katten nooit naar buiten te laten gaan! Schuwe katten kunnen snel in paniek raken en vluchten. Ook komen ze van oorsprong buiten en verwilderen ze snel.",
+    "color": "Cyper-wit",
+    "neutered_sterilized": true,
+    "arrived": "27-11-2018",
+    "date_of_birth": "1-7-2013",
+    "images": [
+      "https://www.dierenasielutrecht.nl/upload/dieren/Paco.jpg"
+    ]
   },
   {
     "id": 10,
@@ -87,7 +140,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Tara.JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 11,
@@ -96,7 +150,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Verdi%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 12,
@@ -105,7 +160,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Xander%20(1).JPG",
-    "status": 4
+    "status": 4,
+    "images": []
   },
   {
     "id": 13,
@@ -114,7 +170,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Renske.JPG",
-    "status": 4
+    "status": 4,
+    "images": []
   },
   {
     "id": 14,
@@ -123,7 +180,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Yvonne%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 15,
@@ -132,7 +190,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Henk%20(1).JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 16,
@@ -141,7 +200,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Noortje.JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 17,
@@ -150,7 +210,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Epke%20(2).JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 18,
@@ -159,7 +220,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Mike%20(1).jpg",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 19,
@@ -168,7 +230,8 @@
     "age": "Kitten",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Tinus%20&%20Tirza.JPG",
-    "status": 2
+    "status": 2,
+    "images": []
   },
   {
     "id": 20,
@@ -177,7 +240,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/20181111_113802.jpg",
-    "status": 1
+    "status": 1,
+    "images": []
   },
   {
     "id": 21,
@@ -186,7 +250,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Cora.jpg",
-    "status": 1
+    "status": 1,
+    "images": []
   },
   {
     "id": 22,
@@ -195,7 +260,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Martje%20(1).jpg",
-    "status": 4
+    "status": 4,
+    "images": []
   },
   {
     "id": 23,
@@ -204,7 +270,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Canei%20(1).jpg",
-    "status": 1
+    "status": 1,
+    "images": []
   },
   {
     "id": 24,
@@ -213,7 +280,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Stuiterr.JPG",
-    "status": 1
+    "status": 1,
+    "images": []
   },
   {
     "id": 25,
@@ -222,7 +290,8 @@
     "age": "Volwassen",
     "sex": "Kater",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Joep%20(2).JPG",
-    "status": 1
+    "status": 1,
+    "images": []
   },
   {
     "id": 26,
@@ -231,7 +300,8 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Dieuwertje%20(2).JPG",
-    "status": 1
+    "status": 1,
+    "images": []
   },
   {
     "id": 27,
@@ -240,6 +310,7 @@
     "age": "Volwassen",
     "sex": "Poes",
     "image": "https://www.dierenasielutrecht.nl/upload/dieren/Lilo%20(4).JPG",
-    "status": 1
+    "status": 1,
+    "images": []
   }
 ]

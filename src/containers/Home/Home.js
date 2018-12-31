@@ -3,13 +3,16 @@ import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import SideMenu from '../../components/SideMenu';
-import FeaturedArticle from '../../components/FeaturedArticle';
+import FeaturedArticle from '../../components/FeaturedListItem';
 import styles from '../styles';
 import mapStateToProps from '../mapStateToProps';
 import mapDispatchToProps from '../mapDispatchToProps';
 import { HOMEPAGE_TITLE } from '../../constants/Strings';
-import MenuButton from '../../components/MenuButton';
 import { keyExtractor, listFooterComponent } from '../helpers';
+import AppIcon from '../../components/AppIcon/AppIcon';
+import MenuButton from '../../components/MenuButton';
+import Store from '../../config/Store';
+import { toggleSideMenu } from '../../actions/sideMenu';
 
 type Props = {
   navigation: Object,
@@ -22,20 +25,15 @@ type Props = {
 };
 
 class Home extends Component<Props> {
-  static navigationOptions = ({ navigation }) => {
-    const onMenuButtonPress = navigation.getParam('onMenuButtonPress');
-    return {
-      title: HOMEPAGE_TITLE,
-      headerLeft: (
-        <MenuButton onMenuButtonPress={onMenuButtonPress} />
-      ),
-    };
+  static navigationOptions = {
+    title: HOMEPAGE_TITLE,
+    headerLeft: <AppIcon />,
+    headerRight: <MenuButton onMenuButtonPress={() => Store.dispatch(toggleSideMenu())} />,
   };
 
   componentDidMount() {
-    const { fetchFeaturedArticles, navigation, onMenuButtonPress } = this.props;
+    const { fetchFeaturedArticles } = this.props;
     fetchFeaturedArticles();
-    navigation.setParams({ onMenuButtonPress });
   }
 
   renderItem = ({ item }) => (
@@ -43,10 +41,16 @@ class Home extends Component<Props> {
   );
 
   render() {
-    const { featuredArticles, sideMenuIsOpen, onSideMenuItemPress } = this.props;
+    const {
+      navigation, featuredArticles, sideMenuIsOpen, onSideMenuItemPress,
+    } = this.props;
     return (
       <View style={styles.container}>
-        <SideMenu sideMenuIsOpen={sideMenuIsOpen} onSideMenuItemPress={onSideMenuItemPress} />
+        <SideMenu
+          sideMenuIsOpen={sideMenuIsOpen}
+          onSideMenuItemPress={onSideMenuItemPress}
+          routeName={navigation.state.routeName}
+        />
         <FlatList
           data={featuredArticles}
           style={styles.content}

@@ -1,20 +1,21 @@
 // @flow
 import { StyleSheet } from 'react-native';
-import { WHITE } from '../../constants/Styles';
+import { BLACK, WHITE } from '../../constants/Styles';
 
 export default StyleSheet.create({
   container: {
-    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    width: 30,
-    height: 20,
+    width: 40,
+    height: 30,
     justifyContent: 'space-between',
-    left: 18,
+    backgroundColor: WHITE,
+    paddingVertical: 6,
+    paddingHorizontal: 5,
   },
   line: {
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: WHITE,
+    height: 3,
+    borderRadius: 1.5,
+    backgroundColor: BLACK,
   },
 });

@@ -5,11 +5,14 @@ import { connect } from 'react-redux';
 import mapStateToProps from '../mapStateToProps';
 import mapDispatchToProps from '../mapDispatchToProps';
 import styles from '../styles';
-import ListItem from '../../components/ListItem';
+import AnimalListItem from '../../components/AnimalListItem';
 import { CATS } from '../../constants/Strings';
 import { keyExtractor, listFooterComponent } from '../helpers';
-import MenuButton from '../../components/MenuButton';
 import SideMenu from '../../components/SideMenu';
+import AppIcon from '../../components/AppIcon/AppIcon';
+import MenuButton from '../../components/MenuButton';
+import Store from '../../config/Store';
+import { toggleSideMenu } from '../../actions/sideMenu';
 
 type Props = {
   navigation: Object,
@@ -17,36 +20,40 @@ type Props = {
   isFetchingCats: false,
   sideMenuIsOpen: false,
   onSideMenuItemPress: Function,
-  onMenuButtonPress: Function,
+  onAnimalListItemPress: Function,
   fetchCats: Function,
 }
 
 class Cats extends Component<Props> {
-  static navigationOptions = ({ navigation }) => {
-    const onMenuButtonPress = navigation.getParam('onMenuButtonPress');
-    return {
-      title: CATS,
-      headerLeft: (
-        <MenuButton onMenuButtonPress={onMenuButtonPress} />
-      ),
-    };
+  static navigationOptions = {
+    title: CATS,
+    headerLeft: <AppIcon />,
+    headerRight: <MenuButton onMenuButtonPress={() => Store.dispatch(toggleSideMenu())} />,
   };
 
   componentDidMount() {
-    const { fetchCats, navigation, onMenuButtonPress } = this.props;
+    const { fetchCats } = this.props;
     fetchCats();
-    navigation.setParams({ onMenuButtonPress });
   }
 
-  renderItem = ({ item }) => (
-    <ListItem {...item} />
-  );
+  renderItem = ({ item }) => {
+    const { onAnimalListItemPress } = this.props;
+    return (
+      <AnimalListItem {...item} onPress={() => onAnimalListItemPress(item)} />
+    );
+  };
 
   render() {
-    const { cats, sideMenuIsOpen, onSideMenuItemPress } = this.props;
+    const {
+      navigation, cats, sideMenuIsOpen, onSideMenuItemPress,
+    } = this.props;
     return (
       <View style={styles.container}>
-        <SideMenu sideMenuIsOpen={sideMenuIsOpen} onSideMenuItemPress={onSideMenuItemPress} />
+        <SideMenu
+          sideMenuIsOpen={sideMenuIsOpen}
+          onSideMenuItemPress={onSideMenuItemPress}
+          routeName={navigation.state.routeName}
+        />
         <FlatList
           data={cats}
           style={styles.content}

@@ -1,6 +1,6 @@
 // @flow
 import { Dispatch } from 'redux';
-import { StackActions } from 'react-navigation';
+import { StackActions, NavigationActions } from 'react-navigation';
 import { toggleSideMenu } from '../actions/sideMenu';
 import { fetchFeaturedArticles } from '../actions/featuredArticles';
 import { fetchDogs } from '../actions/dogs';
@@ -16,15 +16,21 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   fetchCats: () => {
     dispatch(fetchCats());
   },
-  onMenuButtonPress: () => {
-    dispatch(toggleSideMenu());
-  },
   onSideMenuItemPress: async (screen: string) => {
     try {
       dispatch(toggleSideMenu());
 
       const replaceAction = StackActions.replace({ routeName: screen });
       await dispatch(replaceAction);
+    } catch (e) {
+      console.log(e);
+    }
+  },
+  onAnimalListItemPress: async (animal: Object) => {
+    try {
+      console.log('animal', animal);
+      const navigateAction = NavigationActions.navigate({ routeName: 'Detail', params: animal });
+      await dispatch(navigateAction);
     } catch (e) {
       console.log(e);
     }

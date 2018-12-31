@@ -6,7 +6,7 @@ export default StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: 12,
+    padding: 10,
   },
   listFooterComponent: {
     height: 14,

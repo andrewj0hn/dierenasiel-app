@@ -5,11 +5,14 @@ import { connect } from 'react-redux';
 import mapStateToProps from '../mapStateToProps';
 import mapDispatchToProps from '../mapDispatchToProps';
 import styles from '../styles';
-import ListItem from '../../components/ListItem';
+import AnimalListItem from '../../components/AnimalListItem';
 import { DOGS } from '../../constants/Strings';
 import { keyExtractor, listFooterComponent } from '../helpers';
-import MenuButton from '../../components/MenuButton';
 import SideMenu from '../../components/SideMenu';
+import AppIcon from '../../components/AppIcon/AppIcon';
+import MenuButton from '../../components/MenuButton';
+import Store from '../../config/Store';
+import { toggleSideMenu } from '../../actions/sideMenu';
 
 type Props = {
   navigation: Object,
@@ -18,35 +21,40 @@ type Props = {
   sideMenuIsOpen: false,
   onSideMenuItemPress: Function,
   onMenuButtonPress: Function,
+  onAnimalListItemPress: Function,
   fetchDogs: Function,
 }
 
 class Dogs extends Component<Props> {
-  static navigationOptions = ({ navigation }) => {
-    const onMenuButtonPress = navigation.getParam('onMenuButtonPress');
-    return {
-      title: DOGS,
-      headerLeft: (
-        <MenuButton onMenuButtonPress={onMenuButtonPress} />
-      ),
-    };
+  static navigationOptions = {
+    title: DOGS,
+    headerLeft: <AppIcon />,
+    headerRight: <MenuButton onMenuButtonPress={() => Store.dispatch(toggleSideMenu())} />,
   };
 
   componentDidMount() {
-    const { fetchDogs, navigation, onMenuButtonPress } = this.props;
+    const { fetchDogs } = this.props;
     fetchDogs();
-    navigation.setParams({ onMenuButtonPress });
   }
 
-  renderItem = ({ item }) => (
-    <ListItem {...item} />
-  );
+  renderItem = ({ item }) => {
+    const { onAnimalListItemPress } = this.props;
+    return (
+      <AnimalListItem {...item} onPress={() => onAnimalListItemPress(item)} />
+    );
+  };
 
   render() {
-    const { dogs, sideMenuIsOpen, onSideMenuItemPress } = this.props;
+    const {
+      navigation, dogs, sideMenuIsOpen, onSideMenuItemPress,
+    } = this.props;
     return (
       <View style={styles.container}>
-        <SideMenu sideMenuIsOpen={sideMenuIsOpen} onSideMenuItemPress={onSideMenuItemPress} />
+        <SideMenu
+          sideMenuIsOpen={sideMenuIsOpen}
+          onSideMenuItemPress={onSideMenuItemPress}
+          routeName={navigation.state.routeName}
+        />
         <FlatList
           data={dogs}
           style={styles.content}

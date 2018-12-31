@@ -1,7 +1,7 @@
 // @flow
 import { StyleSheet } from 'react-native';
 import {
-  BLACK, TOP_LAYER, SIDE_MENU_BACKGROUND_COLOR, SIDE_MENU_ITEM_TEXT, BOLD,
+  TOP_LAYER, SIDE_MENU_BACKGROUND_COLOR, SIDE_MENU_ITEM_TEXT, BORDER_GREY, REGULAR,
 } from '../../constants/Styles';
 
 export default StyleSheet.create({
@@ -10,19 +10,17 @@ export default StyleSheet.create({
     position: 'absolute',
     zIndex: TOP_LAYER,
     top: 0,
-    left: 0,
+    right: 0,
     bottom: 0,
     justifyContent: 'center',
     backgroundColor: SIDE_MENU_BACKGROUND_COLOR,
-    shadowColor: BLACK,
-    shadowOffset: { width: 1, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 1,
+    borderLeftWidth: 0.5,
+    borderLeftColor: BORDER_GREY,
   },
   label: {
     color: SIDE_MENU_ITEM_TEXT,
     fontSize: 16,
-    fontWeight: BOLD,
+    fontWeight: REGULAR,
     letterSpacing: 0.4,
     marginVertical: 10,
     paddingVertical: 10,

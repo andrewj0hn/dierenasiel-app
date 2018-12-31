@@ -6,6 +6,12 @@ export type Age = number;
 export type Sex = string;
 export type Image = string;
 export type Status = number;
+export type Description = string;
+export type Color = string;
+export type NeuteredSterilized = boolean;
+export type Arrived = string;
+export type DateOfBirth = string;
+export type Images = Array;
 
 export type Cat = {
   id: Id,
@@ -15,6 +21,12 @@ export type Cat = {
   sex: Sex,
   image: Image,
   status: Status,
+  description: Description,
+  color: Color,
+  neutered_sterilized: NeuteredSterilized,
+  arrived: Arrived,
+  dateOfBirth: DateOfBirth,
+  images: Images,
 };
 
 export type Cats = Array<Cat>;

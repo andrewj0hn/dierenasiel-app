@@ -12,7 +12,7 @@ type Props = {
   image: string
 };
 
-const FeaturedArticle = ({
+const FeaturedListItem = ({
   title, text, image,
 }: Props) => (
   <View style={styles.container}>
@@ -27,4 +27,4 @@ const FeaturedArticle = ({
   </View>
 );
 
-export default FeaturedArticle;
+export default FeaturedListItem;

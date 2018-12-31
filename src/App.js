@@ -7,7 +7,7 @@ import { Store, AppWithNavigationState } from './config';
 const App = () => (
   <Provider store={Store}>
     <View style={{ flex: 1 }}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="dark-content" />
       <AppWithNavigationState />
     </View>
   </Provider>

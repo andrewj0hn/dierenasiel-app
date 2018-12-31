@@ -1,18 +1,18 @@
 // @flow
 import { StyleSheet } from 'react-native';
 import {
-  LIST_ITEM_COLOR, BLACK, WHITE, EXTRA_BOLD,
+  LIST_ITEM_COLOR, WHITE, EXTRA_BOLD, LIGHT, BORDER_GREY,
 } from '../../constants/Styles';
 
 export default StyleSheet.create({
+  touchableHighlight: {
+    marginBottom: 7,
+  },
   container: {
     flexDirection: 'row',
     backgroundColor: LIST_ITEM_COLOR,
-    shadowColor: BLACK,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 3,
-    marginBottom: 10,
+    borderColor: BORDER_GREY,
+    borderWidth: 0.5,
   },
   image: {
     width: 130,
@@ -29,7 +29,10 @@ export default StyleSheet.create({
   column: {
     marginEnd: 12,
   },
-  row: {
+  text: {
+    fontWeight: LIGHT,
+  },
+  textMargin: {
     marginBottom: 3,
   },
   status: {
@@ -39,7 +42,7 @@ export default StyleSheet.create({
   },
   statusLabel: {
     color: WHITE,
-    fontSize: 12,
+    fontSize: 11,
     fontStyle: 'italic',
     fontWeight: EXTRA_BOLD,
     letterSpacing: 0.4,

@@ -10,6 +10,4 @@ const reduxNavigation = createReactNavigationReduxMiddleware(
   state => state.nav,
 );
 
-const store = createStore(reducers, applyMiddleware(thunk, logger, reduxNavigation));
-
-export default store;
+export default createStore(reducers, applyMiddleware(thunk, logger, reduxNavigation));

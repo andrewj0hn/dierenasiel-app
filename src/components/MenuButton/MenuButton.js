@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, TouchableHighlight } from 'react-native';
 import styles from './styles';
-import { HEADER_COLOR } from '../../constants/Styles';
+import { WHITE } from '../../constants/Styles';
 
 type Props = {
   onMenuButtonPress: Function,
@@ -10,7 +10,7 @@ type Props = {
 
 const MenuButton = ({ onMenuButtonPress }: Props) => (
   <View>
-    <TouchableHighlight underlayColor={HEADER_COLOR} onPress={onMenuButtonPress}>
+    <TouchableHighlight onPress={onMenuButtonPress} underlayColor={WHITE}>
       <View style={styles.container}>
         <View style={styles.line} />
         <View style={styles.line} />

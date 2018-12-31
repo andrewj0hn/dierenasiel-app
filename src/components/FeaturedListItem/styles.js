@@ -1,17 +1,15 @@
 // @flow
 import { StyleSheet } from 'react-native';
 import {
-  LIGHT, EXTRA_BOLD, LIST_ITEM_COLOR, PALETTE_GREEN, WHITE, BLACK,
+  LIGHT, EXTRA_BOLD, LIST_ITEM_COLOR, PALETTE_GREEN, WHITE, BORDER_GREY,
 } from '../../constants/Styles';
 
 export default StyleSheet.create({
   container: {
     backgroundColor: LIST_ITEM_COLOR,
-    shadowColor: BLACK,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 3,
-    marginBottom: 10,
+    borderColor: BORDER_GREY,
+    borderWidth: 0.5,
+    marginBottom: 7,
   },
   image: {
     height: 165,
@@ -37,7 +35,7 @@ export default StyleSheet.create({
   },
   readMoreText: {
     color: WHITE,
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: EXTRA_BOLD,
     letterSpacing: 0.6,
   },

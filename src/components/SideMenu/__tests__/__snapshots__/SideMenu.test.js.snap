@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFF",
+        "borderLeftColor": "#DFDFDF",
+        "borderLeftWidth": 0.5,
+        "bottom": 0,
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 1,
+      },
+      Object {
+        "width": 0,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#3A3A3A",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.4,
+          "marginVertical": 10,
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Home
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#3A3A3A",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.4,
+          "marginVertical": 10,
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Honden
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#3A3A3A",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.4,
+          "marginVertical": 10,
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Katten
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#3A3A3A",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.4,
+          "marginVertical": 10,
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Pension
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#3A3A3A",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "letterSpacing": 0.4,
+          "marginVertical": 10,
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Contact
+    </Text>
+  </View>
+</View>
+`;

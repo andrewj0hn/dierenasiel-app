@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/andrewj0hn/dierenasiel-app.svg?branch=master)](https://travis-ci.org/andrewj0hn/dierenasiel-app)
